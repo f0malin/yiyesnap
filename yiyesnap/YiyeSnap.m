@@ -61,7 +61,7 @@
 }
 
 -(void)switchOutputFile {
-    NSString *strUrl = [NSString stringWithFormat:@"yy_%d.mp4", _startIndex];
+    NSString *strUrl = [NSString stringWithFormat:@"yy_%d.tmp.mp4", _startIndex];
     NSURL *url = [NSURL fileURLWithPath:strUrl];
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]])
@@ -84,7 +84,11 @@
 }
 
 -(void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray *)connections error:(NSError *)error {
-    NSLog(@"finished %@", [outputFileURL path]);
+    NSString *finalPath = [[outputFileURL path] stringByReplacingOccurrencesOfString:@".tmp" withString:@""];
+    NSLog(@"finished %@ %@", [outputFileURL path], finalPath);
+    NSURL *finalUrl = [NSURL fileURLWithPath:finalPath];
+    NSError *err = nil;
+    [[NSFileManager defaultManager] moveItemAtURL:outputFileURL toURL:finalUrl error:&err];
 }
 
 @end
