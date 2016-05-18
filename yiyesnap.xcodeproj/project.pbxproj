@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		225D66E31CEC709300C2970A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225D66E21CEC709300C2970A /* main.m */; };
 		225D66EB1CEC75F200C2970A /* YiyeSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = 225D66EA1CEC75F200C2970A /* YiyeSnap.m */; };
+		225D66ED1CECA25900C2970A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 225D66EC1CECA25900C2970A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		225D66E21CEC709300C2970A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		225D66E91CEC75F200C2970A /* YiyeSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiyeSnap.h; sourceTree = "<group>"; };
 		225D66EA1CEC75F200C2970A /* YiyeSnap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiyeSnap.m; sourceTree = "<group>"; };
+		225D66EC1CECA25900C2970A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		225D66D61CEC709300C2970A = {
 			isa = PBXGroup;
 			children = (
+				225D66EC1CECA25900C2970A /* README.md */,
 				225D66E11CEC709300C2970A /* yiyesnap */,
 				225D66E01CEC709300C2970A /* Products */,
 			);
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225D66ED1CECA25900C2970A /* README.md in Sources */,
 				225D66E31CEC709300C2970A /* main.m in Sources */,
 				225D66EB1CEC75F200C2970A /* YiyeSnap.m in Sources */,
 			);
@@ -245,6 +249,7 @@
 				225D66E81CEC709300C2970A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
