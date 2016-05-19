@@ -16,7 +16,8 @@
     int _startIndex;
     
     AVCaptureSession *session;
-    AVCaptureMovieFileOutput *output;
+    int outputIndex;
+    NSArray *outputArray;
     NSTimer *timer;
 }
 
